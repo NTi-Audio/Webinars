@@ -264,10 +264,10 @@ Settings messages use the top-level `error` field to communicate stream status:
 ### Successful connection – 123 data only
 
 ```
-Opening socket to "wss://connect.nti-audio.com/LX3VZ-V2FHU/api/live/"
+Opening socket to "wss://connect.nti-audio.com/XXXXX-XXXXX/api/live/"
 Socket opened.
 RX "Password:"
-TX 1111
+TX XXXX
 TX "START 123"
 ```
 
@@ -303,10 +303,10 @@ TX "START 123"
 ### Successful connection – 123 data and spectrum
 
 ```
-Opening socket to "wss://connect.nti-audio.com/LX3VZ-V2FHU/api/live/"
+Opening socket to "wss://connect.nti-audio.com/XXXXX-XXXXX/api/live/"
 Socket opened.
 RX "Password:"
-TX 1111
+TX XXXX
 TX "START 123 Spectrum"
 ```
 
@@ -349,10 +349,10 @@ TX "START 123 Spectrum"
 ### Error – wrong credential
 
 ```
-Opening socket to "wss://connect.nti-audio.com/LX3VZ-V2FHU/api/live/"
+Opening socket to "wss://connect.nti-audio.com/XXXXX-XXXXX/api/live/"
 Socket opened.
 RX "Password:"
-TX 1111
+TX XXXX
 TX "START 123 Spectrum"
 RX "Incorrect password"
 Socket closed.
@@ -363,7 +363,7 @@ Result: startup failed. No application JSON stream is started.
 ### Error – too many clients
 
 ```
-Opening socket to "wss://connect.nti-audio.com/LX3VZ-V2FHU/api/live/"
+Opening socket to "wss://connect.nti-audio.com/XXXXX-XXXXX/api/live/"
 Socket opened.
 RX "Already in use"
 Socket closed.
