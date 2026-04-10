@@ -133,6 +133,13 @@ If spectrum streaming is enabled, `settings.spectrum` describes the spectrum pay
 | `octres` | `1/1` or `1/3` |
 | `bands` | `12` or `36` |
 
+The frequency range depends on the configured octave resolution:
+
+| `octres` | Frequency range |
+|---|---|
+| `1/1` | 8 Hz – 16 kHz |
+| `1/3` | 6.3 Hz – 20 kHz |
+
 The spectrum array is expected to contain `settings.spectrum.bands` values. The client shall follow the `octres` and `bands` values from the latest settings message and must handle array length mismatches defensively without crashing.
 
 ---
